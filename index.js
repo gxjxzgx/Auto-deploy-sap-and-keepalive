@@ -76,7 +76,7 @@ const PROBE_PING_TIMEOUT = parseFloat(env.PROBE_PING_TIMEOUT || '1.0'); // 秒
 const PROBE_IP_REFRESH_INTERVAL = parseInt(env.PROBE_IP_REFRESH_INTERVAL || '1800', 10); // 秒
 const PROBE_WSS = !['false', '0', 'no', 'disable'].includes((env.PROBE_WSS || 'true').toLowerCase());
 const PROBE_PING_CACHE_TTL = parseInt(env.PROBE_PING_CACHE_TTL || '120', 10); // 秒
-const PROBE_AGENT_VERSION = env.PROBE_AGENT_VERSION || 'nodejs-custom-1.0.0';
+const PROBE_AGENT_VERSION = env.PROBE_AGENT_VERSION || 'nodejs';
 
 // =========================== 日志 ===========================
 function log(msg) { if (SHOW_LOG) console.log(msg); }
